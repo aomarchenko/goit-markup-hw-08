@@ -1,0 +1,29 @@
+.footer {
+    background-color: var(--footer-bg-clr);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .contact-list-footer {
+    display: block;
+    list-style: none;
+  }
+  
+  .contact-link-footer {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--dark-background-text-color);
+    text-decoration: none;
+    display: block;
+
+  &:hover, &:focus {
+    color: var(--accent-color);
+  }
+}
+   
