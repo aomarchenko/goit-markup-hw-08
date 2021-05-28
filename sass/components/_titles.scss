@@ -23,6 +23,19 @@
   }
   }
   .hero-header {
+
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--simple-white);
+   
+
+    @media screen and (min-width: 1230px) {
+      
+    
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -31,7 +44,7 @@
     text-transform: uppercase;
     color: var(--simple-white);
     margin-bottom: 40px;
-  }
+  }}
   .clients-header {
     font-weight: 700;
     font-size: 36px;

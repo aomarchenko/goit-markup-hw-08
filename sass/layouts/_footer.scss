@@ -3,11 +3,71 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  
-  .footer-container {
-    display: flex;
-    align-items: baseline;
+  .footer-form-container {
+    margin-top: 60px;
+    @media screen and (min-width: 768px){
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 60px;
+      text-align: center;
+      
   }
+  @media screen and (min-width: 1230px){
+    margin-left: 93px;
+    
+    
+  }
+  }
+  .footer-form {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    align-items: center;
+    @media screen and (min-width: 768px){
+      margin-left: auto;
+      margin-right: auto;
+      @media screen and (min-width: 1230px){
+
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+        margin-top: 0;
+      
+  }
+  .footer-form-label-text {
+    @media screen and (min-width: 768px){
+      text-align: center;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+      
+  }
+  @media screen and (min-width: 420px){
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}}
+  }
+  }
+  .footer-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+   
+  @media screen and (min-width: 768px){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 60px;
+  }
+  @media screen and (min-width: 1230px){
+    flex-wrap: nowrap;
+  display: flex;
+  align-items: baseline;
+}}
   
   .contact-list-footer {
     display: block;

@@ -5,12 +5,14 @@ html {
   *::before,
   *::after {
     box-sizing: inherit;
+    
   }
   ul,
   p {
     margin: 0;
     padding: 0;
   }
+
   a {
     text-decoration: none;
   }
@@ -25,10 +27,10 @@ html {
   }
   img {
     display: block;
+    width: 100%;
+    max-height: auto;
   }
-  .img {
-    display: block;
-  }
+  
   body {
     font-family: "Roboto", sans-serif;
     color: var(--main-text-color);

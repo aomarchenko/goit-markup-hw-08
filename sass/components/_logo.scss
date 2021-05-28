@@ -6,9 +6,20 @@
   letter-spacing: 0.03em;
   color: var(--logo-text-color);
   text-decoration: none;
-  display: block;
+  
   margin-top: 24px;
   margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: nowrap;
+    
+  
+  margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  display: flex;
+    flex-wrap: nowrap;
+}
 }
    
   
