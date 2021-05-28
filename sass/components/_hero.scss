@@ -30,6 +30,17 @@
         max-width: 1600px;
         height: 600px;}
   }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .overlay {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tab/Header_tab@2x.jpg);
+    }
+  }
+  
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767.9px), screen and (min-resolution: 192dpi) and (max-width: 767.98px), screen and (min-resolution: 2dppx) and (max-width: 767.9px) {
+    .overlay {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mob/Header_mob@2x.jpg);
+    }
+  }
   
   
   .hero-section {
