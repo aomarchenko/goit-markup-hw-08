@@ -156,6 +156,7 @@
   }
     .button-list {
         display: flex;
+        flex-wrap: wrap;
         padding-top: 94px;
         padding-bottom: 50px;
         justify-content: center;
@@ -166,4 +167,7 @@
       
       .button-list {
         list-style-type: none;
+      }
+      .button-li{
+        margin-bottom: 21px;
       }

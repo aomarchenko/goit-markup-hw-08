@@ -311,6 +311,7 @@ body {
 
 .button-list {
   display: flex;
+  flex-wrap: wrap;
   padding-top: 94px;
   padding-bottom: 50px;
   justify-content: center;
@@ -322,6 +323,10 @@ body {
 
 .button-list {
   list-style-type: none;
+}
+
+.button-li {
+  margin-bottom: 21px;
 }
 
 .card-container {
@@ -1150,12 +1155,33 @@ body {
 }
 
 .examples-list-portfolio {
-  display: flex;
-  padding: 0;
   list-style: none;
-  flex-wrap: wrap;
+  display: flex;
   margin-left: -30px;
   margin-top: -30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.examples-list-portfolio > .portfolio-list-item {
+  list-style: none;
+  text-align: center;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .examples-list-portfolio > .portfolio-list-item {
+    flex-basis: calc(100% / 2 - 30px);
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1230px) {
+  .examples-list-portfolio > .portfolio-list-item {
+    flex-basis: calc(100% / 4 - 30px);
+    text-align: left;
+  }
 }
 
 .footer {
@@ -1203,6 +1229,12 @@ body {
     flex-direction: row;
     margin-bottom: 10px;
     margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-form .footer-form-input {
+    width: 100%;
   }
 }
 
