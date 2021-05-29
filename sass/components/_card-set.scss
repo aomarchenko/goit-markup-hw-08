@@ -21,12 +21,12 @@
   .portfolio-list-item:hover .card-overlay{
     transform: translateY(0);
   }
-  .portfolio-list-item {
-    margin-left: 30px;
-    margin-top: 30px;
-    flex-basis: calc(100% / 3 - 30px);
-    text-align: left;
-  }
+  // .portfolio-list-item {
+  //   margin-left: 30px;
+  //   margin-top: 30px;
+  //   flex-basis: calc(100% / 3 - 30px);
+  //   text-align: left;
+  // }
   .portfolio-list-item-link {
     display: block;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);

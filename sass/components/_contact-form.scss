@@ -23,9 +23,9 @@
     letter-spacing: 0.03em;
     color: var(--dark-background-text-color);
     align-items: center;
-    @media screen and (min-width: 1230px){
+    // @media screen and (min-width: 1230px){
     margin-right: 12px;
-    padding-left: 16px;}
+    padding-left: 16px;
     
   &:hover,
   &:focus
@@ -34,9 +34,9 @@
   }
 }
   .footer-form {
-    margin-left: 93px;
+    @media screen and (min-width: 1230px){
     display: flex;
     flex-direction: row;
   
-  }
+  }}
   
