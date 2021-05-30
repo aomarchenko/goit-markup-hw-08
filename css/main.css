@@ -12,6 +12,7 @@
   --close-border: 1px solid rgba(0, 0, 0, 0.1);
   --button-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   --modal-btn:  #188CE8;
+  --common-font: font-family: roboto, sans-serif;
 }
 
 html {
@@ -47,11 +48,11 @@ h6 {
 img {
   display: block;
   width: 100%;
-  max-height: auto;
+  height: auto;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: roboto, sans-serif;
   color: var(--main-text-color);
   margin: 0;
 }
@@ -112,24 +113,18 @@ body {
   .header-container {
     max-width: 480px;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .header-container {
     max-width: 768px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 
 @media screen and (min-width: 1230px) {
   .header-container {
     max-width: 1230px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 
@@ -161,7 +156,7 @@ body {
 }
 
 .hero-button {
-  font-family: "Roboto", sans-serif;
+  font-family: roboto, sans-serif;
   color: var(--simple-white);
   background-color: var(--accent-color);
   font-weight: 700;
@@ -176,7 +171,7 @@ body {
 }
 
 .button {
-  font-family: "Roboto", sans-serif;
+  font-family: roboto, sans-serif;
   color: var(--header-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -199,7 +194,7 @@ body {
 }
 
 .accent-button {
-  font-family: "Roboto", sans-serif;
+  font-family: roboto, sans-serif;
   color: var(--simple-white);
   font-weight: 500;
   font-size: 16px;
@@ -218,7 +213,7 @@ body {
   min-width: 200px;
   margin-left: auto;
   margin-right: auto;
-  font-family: "Roboto", sans-serif;
+  font-family: roboto, sans-serif;
   color: var(--simple-white);
   font-weight: 700;
   font-size: 16px;
@@ -347,6 +342,7 @@ body {
   border-right: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
   padding: 20px 24px;
+  text-align: left;
 }
 
 .client-card {
@@ -414,6 +410,25 @@ body {
   margin-right: auto;
 }
 
+@media screen and (min-width: 1230px) {
+  .item-container {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .item-container {
+    padding: 0;
+  }
+}
+
+.item-container-text {
+  padding: 30px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .team-paragraf {
   margin-top: 10px;
   margin-bottom: 16px;
@@ -462,7 +477,6 @@ body {
 }
 
 .footer-form-input {
-  width: 358px;
   height: 50px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -476,6 +490,24 @@ body {
   align-items: center;
   margin-right: 12px;
   padding-left: 16px;
+}
+
+@media screen and (max-width: 479.9px) {
+  .footer-form-input {
+    min-width: 290px;
+  }
+}
+
+@media screen and (min-width: 1230px) {
+  .footer-form-input {
+    width: 358px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .footer-form-input {
+    width: 450px;
+  }
 }
 
 .footer-form-input:hover, .footer-form-input:focus {
@@ -501,8 +533,15 @@ body {
   background-position: center;
 }
 
+@media screen and (max-width: 767.9px) {
+  .overlay {
+    padding: 118px 60px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .overlay {
+    padding: 118px 60px;
     max-width: 480px;
     height: 400px;
   }
@@ -510,6 +549,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .overlay {
+    padding: 118px 204px;
     max-width: 768px;
     height: 400px;
   }
@@ -556,6 +596,8 @@ body {
 .icon {
   width: 100%;
   height: 120px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   background-color: var(--btn-bg-clr);
 }
 
@@ -621,7 +663,7 @@ body {
   background-color: var(--modal-bg);
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 1;
+  z-index: 100;
 }
 
 .backdrop.is-hidden {
@@ -655,13 +697,28 @@ body {
   flex-direction: column;
 }
 
-.modal-form {
-  width: 450px;
-  height: 609px;
+@media screen and (max-width: 479.9px) {
+  .modal {
+    max-width: 290px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
 }
 
 @media screen and (min-width: 1230px) {
-  .modal-form {
+  .modal {
     width: 528px;
     height: 581px;
   }
@@ -874,13 +931,25 @@ body {
 }
 
 .hero-header {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.61;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--simple-white);
+}
+
+@media screen and (max-width: 767.9px) {
+  .hero-header {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-header {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 1230px) {
@@ -986,12 +1055,16 @@ body {
 }
 
 .nav-link-mobile {
-  font-family: Roboto;
+  font-family: roboto, sans-serif;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.175;
   letter-spacing: 0.02em;
   color: var(--header-text-color);
+}
+
+.mobile-nav-item {
+  margin-bottom: 32px;
 }
 
 .nav-link-mobile:focus {
@@ -1003,12 +1076,12 @@ body {
 }
 
 .contact-link-mobile {
-  font-family: Roboto;
   color: var(--main-text-color);
   font-weight: 500;
   font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.02em;
+  font-family: roboto, sans-serif;
 }
 
 .contact-link-mobile:focus {
@@ -1020,7 +1093,7 @@ body {
 }
 
 .social-networks-mob {
-  font-family: Roboto;
+  font-family: roboto, sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
@@ -1031,12 +1104,28 @@ body {
 .mobile-socials {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: left;
+}
+
+.networks-mobile {
+  text-align: center;
+}
+
+.mobile-socials .networks-mobile:nth-child(n+1) {
+  margin-left: 10px;
 }
 
 .mobile-socials .networks-mobile:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   padding-right: 10px;
+}
+
+.tel {
+  color: var(--accent-color);
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17px;
+  letter-spacing: 0.02em;
 }
 
 .mobile-menu__btn {
@@ -1058,6 +1147,13 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .mobile-menu-icon {
+    display: none;
+    visibility: hidden;
+  }
+}
+
 .is-open .icon-mobmenu {
   display: none;
 }
@@ -1068,6 +1164,10 @@ body {
 
 .is-open .icon-close-mobmenu {
   display: block;
+}
+
+.icon-close-mobmenu:hover, .icon-close-mobmenu:focus {
+  fill: var(--accent-color);
 }
 
 .customers-link:hover .reg-client-icon {
@@ -1358,6 +1458,13 @@ body {
 }
 
 @media screen and (min-width: 1230px) {
+  .contact-list-item {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1230px) {
   .contact-list-item + .contact-list-item {
     margin-left: 50px;
   }
@@ -1394,6 +1501,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1230px) {
+  .contact-list {
+    margin: 0;
+  }
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -1415,6 +1528,7 @@ body {
 .team-item {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
 }
 
 .team-list > .team-item {
@@ -1455,6 +1569,19 @@ body {
 
 .grey-section {
   background-color: #F5F4FA;
+}
+
+@media screen and (max-width: 767.9px) {
+  .jobs-header {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .what-we-do-list {

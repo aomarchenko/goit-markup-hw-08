@@ -14,12 +14,18 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    @media screen and (max-width: 767.9px) {
+      padding: 118px 60px;}
+
     @media screen and (min-width: 480px) {
-    
+      padding: 118px 60px;
   
       max-width: 480px;
       height: 400px;}
       @media screen and (min-width: 768px) {
+        padding: 118px 204px;
+        
+
     
   
         max-width: 768px;

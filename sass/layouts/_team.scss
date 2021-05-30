@@ -11,6 +11,7 @@
   .team-item {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
   }
   .team-list > .team-item {
     
@@ -46,4 +47,16 @@
   }
   .grey-section {
     background-color: #F5F4FA;
+    }
+
+  .jobs-header{
+    @media screen and (max-width: 767.9px){
+      margin-top: 0;
+  }}
+  .section {
+    @media screen and (max-width: 767.9px){
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
   }

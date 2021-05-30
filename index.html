@@ -71,13 +71,13 @@
     </header> 
     <div class="mobile-menu" data-menu>
       <ul class="mobile-nav">
-        <li><a class="nav-link-mobile" href="./index.html">Студия</a></li>
-        <li><a class="nav-link-mobile" href="./portfolio.html">Портфолио</a></li>
-        <li><a class="nav-link-mobile" href="">Контакты</a></li>
+        <li class="mobile-nav-item"><a class="nav-link-mobile" href="./index.html">Студия</a></li>
+        <li class="mobile-nav-item"><a class="nav-link-mobile" href="./portfolio.html">Портфолио</a></li>
+        <li class="mobile-nav-item"><a class="nav-link-mobile" href="">Контакты</a></li>
       </ul>
       <ul class="mobile-contacts">
-        <li><a class="contact-link-mobile" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        <li><a class="contact-link-mobile" href="mailto:info@devstudio.com"></a>info@devstudio.com</li>
+        <li class="mobile-nav-item"><a class="contact-link-mobile tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li class="mobile-nav-item"><a class="contact-link-mobile" href="mailto:info@devstudio.com"></a>info@devstudio.com</li>
       </ul>
 
       <ul class="mobile-socials">
@@ -109,11 +109,8 @@
 
       <section class="hero-section">
         <div class="overlay">
-          <div class="container">
-            <svg class="mobile-menu-icon" width="40" height="40" >
-              <use class="icon-mobmenu" href="./images/symbol-defs.svg#icon-mobmenu"></use>
-              <use class="icon-close-mobmenu" href="./images/symbol-defs.svg#icon-close-mobmenu"></use>
-            </svg>
+          <div class="hero-container">
+            
             <h1 class="hero-header">
               Эффективные решения <br />
               для вашего бизнеса
@@ -210,7 +207,7 @@
                 src="./images/coder.jpg"
                 alt="программист пишет код"
                 width="370"
-                height="auto"
+                height="294"
               />
                 </picture>
 
@@ -229,7 +226,7 @@
                 src="./images/adaptive_design.jpg"
                 alt="адаптивная вёрстка"
                 width="370"
-                height="auto"
+                height="294"
               />
                 </picture>
               
@@ -245,7 +242,7 @@
                 src="./images/color_scheme.jpg"
                 alt="выбор цветовой палитры"
                 width="370"
-                height="auto"
+                height="294"
               />
                 </picture>
               
@@ -279,12 +276,10 @@
                   src="./images/product_designer.jpg"
                   alt="фото Игоря Демьяненко"
                   width="270"
-                  height="auto"
-                />
+                  min-height="294"/>
                   </picture>
-                
-              </div>
-                <div class="item-container">
+                </div>
+                <div class="item-container-text">
                   <h3 class="team-header">Игорь Демьяненко</h3>
                   <p class="team-paragraf" lang="en">Product Designer</p>
                   <ul class="social-networks-list">
@@ -339,11 +334,11 @@
                   src="./images/frontend_developer.jpg"
                   alt="фото Ольги Репиной"
                   width="270"
-                  height="auto"
+                  min-height="294"
                 />
                   </picture>
                 </div>
-                <div class="item-container">
+                <div class="item-container-text">
                   <h3 class="team-header">Ольга Репина</h3>
                   <p class="team-paragraf" lang="en">Frontend Developer</p>
                   <ul class="social-networks-list">
@@ -398,11 +393,11 @@
                   src="./images/marketing.jpg"
                   alt="фото Николая Тарасова"
                   width="270"
-                  height="auto"
+                  min-height="294"
                 />
                   </picture>
                 </div>
-                <div class="item-container">
+                <div class="item-container-text">
                   <h3 class="team-header">Николай Тарасов</h3>
                   <p class="team-paragraf" lang="en">Marketing</p>
                   <ul class="social-networks-list">
@@ -457,11 +452,11 @@
                   src="./images/designer.jpg"
                   alt="фото Михаила Ермакова"
                   width="270"
-                  height="auto"
+                  min-height="294"
                 />
                   </picture>
                 </div>
-                <div class="item-container">
+                <div class="item-container-text">
                   <h3 class="team-header">Михаил Ермаков</h3>
                   <p class="team-paragraf" lang="en">UI Designer</p>
                   <ul class="social-networks-list">

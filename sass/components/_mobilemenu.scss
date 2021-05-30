@@ -1,7 +1,4 @@
-
-.mobile-menu
-
-{
+.mobile-menu {
     position: fixed;
     top: 0;
     left: 100%;
@@ -9,34 +6,38 @@
     width: 100%;
     height: 100vh;
     background-color: white;
-    
-    
     transition: 0.5s;
     z-index: 9;
-  
+
     &.is-open {
       left: 0;
     }
   }
+
 .mobile-nav, .mobile-contacts, .mobile-socials {
   list-style: none;
 }
+
 .mobile-nav {
   margin-bottom: 306px;
 }
+
 .mobile-contacts {
   margin-bottom: 64px;
 }
-.nav-link-mobile {
-  font-family: Roboto;
 
+.nav-link-mobile {
+font-family: roboto, sans-serif;
 font-weight: 500;
 font-size: 40px;
 line-height: 1.175;
 letter-spacing: 0.02em;
 color: var(--header-text-color);
-
 }
+
+.mobile-nav-item{
+margin-bottom: 32px;}
+
 .nav-link-mobile:focus {
   color: var(--accent-color);
 }
@@ -44,12 +45,12 @@ color: var(--header-text-color);
   color: var(--accent-color);
 }
 .contact-link-mobile{
-  font-family: Roboto;
-color: var(--main-text-color) ;
-font-weight: 500;
-font-size: 24px;
-line-height: 1.16;
-letter-spacing: 0.02em;
+  color: var(--main-text-color) ;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  font-family: roboto, sans-serif;
 }
 .contact-link-mobile:focus {
   color: var(--accent-color);
@@ -58,22 +59,37 @@ letter-spacing: 0.02em;
   color: var(--accent-color);
 }
 .social-networks-mob {
-font-family: Roboto;
+  font-family: roboto, sans-serif;
 font-weight: 500;
 font-size: 18px;
 line-height: 1.22;
 letter-spacing: 0.02em;
 color: var(--accent-color);
-
 }
+
 .mobile-socials {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: left;
 }
+.networks-mobile{
+  text-align: center;
+}
+
+.mobile-socials .networks-mobile:nth-child(n+1){
+  margin-left: 10px;}
+
 .mobile-socials .networks-mobile:not(:last-child){
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   padding-right: 10px;
+}
+
+.tel {
+  color: var(--accent-color);
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17px;
+  letter-spacing: 0.02em;
 }
 
 
@@ -96,9 +112,16 @@ color: var(--accent-color);
     outline: none;
     @media screen and (min-width: 768px) {
         display: none;
+        
     }
 }
-
+.mobile-menu-icon{
+  @media screen and (min-width: 768px) {
+    display: none;
+    visibility: hidden;
+    
+}
+}
 
   
   .is-open .icon-mobmenu {
@@ -111,5 +134,7 @@ color: var(--accent-color);
       
     }
   }
-  
+  .icon-close-mobmenu:hover, .icon-close-mobmenu:focus{
+    fill: var(--accent-color);
+  }
   
