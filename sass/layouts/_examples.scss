@@ -1,31 +1,28 @@
-
 .examples-list {
     list-style: none;
     display: flex;
-    
     margin-left: -30px;
     margin-top: -30px;
     display: flex;
-    flex-wrap: wrap;   
-    
+    flex-wrap: wrap;    
 }
 
 .examples-paragraf{
   text-align: left;
 }
-  .examples-list > .examples-list-item {
-   
-    
-    text-align: center;
-    margin-left: 30px;
-    margin-top: 30px;
-    @media screen and (min-width: 768px){
+
+.examples-list > .examples-list-item {
+  text-align: center;
+  margin-left: 30px;
+  margin-top: 30px;
+
+  @media screen and (min-width: 768px){
     flex-basis: calc(100% / 2 - 30px);
     text-align: left;
   }
-    @media screen and (min-width: 1230px){
-      flex-basis: calc(100% / 4 - 30px);
-      text-align: left;
+  @media screen and (min-width: 1230px){
+    flex-basis: calc(100% / 4 - 30px);
+    text-align: left;
     }
 
     

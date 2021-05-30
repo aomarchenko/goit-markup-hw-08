@@ -9,13 +9,16 @@
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 100;
   }
+
   .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
   }
+
   .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(1.1);
   }
+
   .modal {
     position: absolute;
     top: 50%;
@@ -30,48 +33,44 @@
     letter-spacing: 0.01em;
     color: var(--main-text-color);
     font-size: 12px;
-  
   }
-  
-  
-  
-  
+
   .modal-form,
   .modal-form-fields,
   .modal-form-field {
     display: flex;
     flex-direction: column;
   }
+
   .modal {
     @media screen and(max-width:479.9px) {
       max-width: 290px;}
-      @media screen and(min-width:480px) {
-        width: 450px;
-        height: 609px;}
-        // padding-right: 15px;
-        // padding-left: 15px;
-
+    @media screen and(min-width:480px) {
+      width: 450px;
+      height: 609px;}
     @media screen and(min-width:768px) {
-    width: 450px;
-    height: 609px;}
+      width: 450px;
+      height: 609px;}
     @media screen and(min-width:1230px) {
       width: 528px;
-    height: 581px;
+      height: 581px;
     }
-    
   }
   
   .modal-form-fields {
     margin-bottom: 20px;
     text-align: left;
   }
+
   .modal-form-field:not(:last-child) {
     margin-bottom: 10px;
   }
+
   .modal-form-field label {
     font-size: 12px;
     margin-bottom: 4px;
   }
+
   .form-field,
   .modal-form-field textarea {
     padding-left: 42px;
@@ -80,18 +79,17 @@
     border-radius: 4px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
-  
+
   .form-icon {
     position: absolute;
     top: 50%;
     left: 12px;
     margin: 0;
     padding: 3px;
-  
     display: inline-block;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
   .modal-form-field {
     position: relative;
     
@@ -120,10 +118,9 @@
     line-height: 16px;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
-  
-  }}
-  
-  
+  }
+}
+
   .checkbox {
     margin-bottom: 30px;
     margin-left: auto;
@@ -134,22 +131,27 @@
     letter-spacing: 0.03em;
     color: var(--main-text-color);
   }
+
   .field-checkbox {
     appearance: none;
   }
+
   .field-checkbox:focus-within + .checkbox-icon {
     border: 2px solid var(--accent-color);
   }
+
   .field-label {
     display: flex;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
   }
+
   .field-label .link {
     color: var(--accent-color);
     text-decoration: underline;
   }
+
   .checkbox-icon {
     display: inline-block;
     margin-right: 8px;
@@ -157,6 +159,7 @@
     border: 2px solid var(--header-text-color);
     border-radius: 2px;
   }
+  
   .field-checkbox:checked + .checkbox-icon {
     background-color: var(--accent-color);
     border: 2px solid var(--accent-color);

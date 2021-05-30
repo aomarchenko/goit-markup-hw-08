@@ -1,8 +1,8 @@
 .overlay {
-  max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(
+   max-width: 480px;
+   margin-left: auto;
+   margin-right: auto;
+   background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -14,28 +14,27 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    @media screen and (max-width: 767.9px) {
-      padding: 118px 60px;}
 
-    @media screen and (min-width: 480px) {
-      padding: 118px 60px;
-  
-      max-width: 480px;
-      height: 400px;}
-      @media screen and (min-width: 768px) {
-        padding: 118px 204px;
-        
+  @media screen and (max-width: 767.9px) {
+    padding: 118px 60px;}
 
-    
-  
-        max-width: 768px;
-        height: 400px;}
-      @media screen and (min-width: 1230px) {
-    
-  
-        max-width: 1600px;
-        height: 600px;}
+  @media screen and (min-width: 480px) {
+    padding: 118px 60px;
+    max-width: 480px;
+    height: 400px;
+    }
+
+  @media screen and (min-width: 768px) {
+    padding: 118px 204px;
+    max-width: 768px;
+    height: 400px;
+    }
+
+  @media screen and (min-width: 1230px) {
+    max-width: 1600px;
+    height: 600px;}
   }
+
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .overlay {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tab/Header_tab@2x.jpg);
@@ -47,8 +46,7 @@
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mob/Header_mob@2x.jpg);
     }
   }
-  
-  
+
   .hero-section {
     text-align: center;
     background-color: var(--footer-bg-clr);

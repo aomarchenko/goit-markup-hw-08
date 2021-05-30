@@ -1,13 +1,13 @@
 .mobile-menu {
-    position: fixed;
-    top: 0;
-    left: 100%;
-    padding: 48px 40px;
-    width: 100%;
-    height: 100vh;
-    background-color: white;
-    transition: 0.5s;
-    z-index: 9;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  padding: 48px 40px;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  transition: 0.5s;
+  z-index: 9;
 
     &.is-open {
       left: 0;
@@ -27,23 +27,26 @@
 }
 
 .nav-link-mobile {
-font-family: roboto, sans-serif;
-font-weight: 500;
-font-size: 40px;
-line-height: 1.175;
-letter-spacing: 0.02em;
-color: var(--header-text-color);
+ font-family: roboto, sans-serif;
+ font-weight: 500;
+ font-size: 40px;
+ line-height: 1.175;
+ letter-spacing: 0.02em;
+ color: var(--header-text-color);
 }
 
 .mobile-nav-item{
-margin-bottom: 32px;}
+  margin-bottom: 32px;
+}
 
 .nav-link-mobile:focus {
-  color: var(--accent-color);
+ color: var(--accent-color);
 }
+
 .nav-link-mobile:hover {
   color: var(--accent-color);
 }
+
 .contact-link-mobile{
   color: var(--main-text-color) ;
   font-weight: 500;
@@ -55,9 +58,11 @@ margin-bottom: 32px;}
 .contact-link-mobile:focus {
   color: var(--accent-color);
 }
+
 .contact-link-mobile:hover {
   color: var(--accent-color);
 }
+
 .social-networks-mob {
   font-family: roboto, sans-serif;
 font-weight: 500;
@@ -72,12 +77,14 @@ color: var(--accent-color);
   flex-direction: row;
   justify-content: left;
 }
+
 .networks-mobile{
   text-align: center;
 }
 
 .mobile-socials .networks-mobile:nth-child(n+1){
-  margin-left: 10px;}
+  margin-left: 10px;
+}
 
 .mobile-socials .networks-mobile:not(:last-child){
   border-right: 1px solid rgba(33, 33, 33, 0.2);
@@ -91,13 +98,6 @@ color: var(--accent-color);
   line-height: 1.17px;
   letter-spacing: 0.02em;
 }
-
-
-
-
-
-
-
 
 .mobile-menu__btn {
     width: 40px;
@@ -113,25 +113,23 @@ color: var(--accent-color);
     @media screen and (min-width: 768px) {
         display: none;
         
-    }
+  }
 }
+
 .mobile-menu-icon{
   @media screen and (min-width: 768px) {
     display: none;
-    visibility: hidden;
-    
+    visibility: hidden;   
 }
-}
+ }
 
-  
-  .is-open .icon-mobmenu {
+.is-open .icon-mobmenu {
     display: none;
   }
   .icon-close-mobmenu {
     display: none;
     .is-open & {
-      display: block;
-      
+      display: block; 
     }
   }
   .icon-close-mobmenu:hover, .icon-close-mobmenu:focus{
