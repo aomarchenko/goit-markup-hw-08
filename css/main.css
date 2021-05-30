@@ -498,7 +498,7 @@ body {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1229.9px) {
   .footer-form-input {
     width: 450px;
   }
