@@ -367,6 +367,11 @@ body {
 .image-overlay {
   position: relative;
   overflow: hidden;
+  text-align: left;
+}
+
+.overlay-text {
+  text-align: left;
 }
 
 .card-overlay {
@@ -384,6 +389,10 @@ body {
   color: var(--simple-white);
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  padding: 63px 24px;
 }
 
 .image {
@@ -398,7 +407,6 @@ body {
 }
 
 .item-container {
-  padding: 30px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -488,7 +496,7 @@ body {
 
 @media screen and (max-width: 479.9px) {
   .footer-form-input {
-    min-width: 290px;
+    max-width: 290px;
   }
 }
 
@@ -1227,6 +1235,12 @@ body {
   margin-top: -30px;
 }
 
+@media screen and (max-width: 479.9px) {
+  .regular-clients {
+    justify-content: center;
+  }
+}
+
 .examples-list {
   list-style: none;
   display: flex;
@@ -1272,7 +1286,7 @@ body {
 
 .examples-list-portfolio > .portfolio-list-item {
   list-style: none;
-  text-align: center;
+  text-align: left;
   margin-left: 30px;
   margin-top: 30px;
 }
@@ -1527,7 +1541,6 @@ body {
 .team-list > .team-item {
   align-items: center;
   text-align: center;
-  text-align: center;
   background: var(--simple-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -1538,7 +1551,6 @@ body {
     flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
     margin-top: 30px;
-    align-items: center;
   }
 }
 
@@ -1547,7 +1559,6 @@ body {
     flex-basis: calc(100% / 4 - 30px);
     margin-left: 30px;
     margin-top: 30px;
-    align-items: center;
   }
 }
 
